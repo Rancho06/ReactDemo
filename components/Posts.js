@@ -36,7 +36,7 @@ var Posts = React.createClass({
 			<section>
 				<InputBox handleFormSubmit={this.addPost} />
 				<div className="row">
-					{this.state.posts.map(this.eachPost)};
+					{this.state.posts.map(this.eachPost)}
 				</div>			
 			</section>
 		);

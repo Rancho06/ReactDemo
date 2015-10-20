@@ -3,7 +3,7 @@ var IndexPage = React.createClass({
     	return (
 	    	<section>
 	    		<Header>{this.props.title}</Header>
-	    		<div id="myPost" className="container">
+	    		<div id="myPost" className="container-fluid">
 	    			<Posts />
 	    		</div>
 	    		<Footer>@CopyRight Shu Zhou 2015</Footer> 

@@ -29,7 +29,7 @@ var InputBox = React.createClass({
 	},
 	render: function() {
 		return (
-			<div>
+			<div className="inputbox">
 				<input type="text" ref="content" className="form-control" placeholder="What would you like to say?" onChange={this.updateContent} />
 				<form id="inputForm" onSubmit={this.handleSubmit} className="form-inline">
 					<input type="text" ref="name" placeholder="Your name" className="form-control" onChange={this.updateName} />

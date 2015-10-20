@@ -29,7 +29,7 @@ var InputBox = React.createClass({displayName: "InputBox",
 	},
 	render: function() {
 		return (
-			React.createElement("div", null, 
+			React.createElement("div", {className: "inputbox"}, 
 				React.createElement("input", {type: "text", ref: "content", className: "form-control", placeholder: "What would you like to say?", onChange: this.updateContent}), 
 				React.createElement("form", {id: "inputForm", onSubmit: this.handleSubmit, className: "form-inline"}, 
 					React.createElement("input", {type: "text", ref: "name", placeholder: "Your name", className: "form-control", onChange: this.updateName}), 

@@ -4,7 +4,7 @@ var Post = React.createClass({
 	},
 	render: function() {
 		return (
-	    	<div className="thumbnail">
+	    	<div className="col-xs-12 col-md-6 thumbnail">
 	      		<div className="caption">
 	        		<h2>{this.props.name}</h2>
 	        		<p>{this.props.content}</p>

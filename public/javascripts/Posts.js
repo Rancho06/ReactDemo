@@ -6,7 +6,7 @@ var Posts = React.createClass({displayName: "Posts",
 	},
 	addPost: function(name, content) {
 		var posts = this.state.posts;
-		posts.push({
+		posts.splice(0, 0, {
 			id: this.nextId(),
 			name: name,
 			content: content
@@ -34,8 +34,10 @@ var Posts = React.createClass({displayName: "Posts",
 	render: function() {
 		return (
 			React.createElement("section", null, 
-				this.state.posts.map(this.eachPost), ";", 
-				React.createElement(InputBox, {handleFormSubmit: this.addPost})
+				React.createElement(InputBox, {handleFormSubmit: this.addPost}), 
+				React.createElement("div", {className: "row"}, 
+					this.state.posts.map(this.eachPost), ";"
+				)			
 			)
 		);
 	}

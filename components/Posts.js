@@ -6,7 +6,7 @@ var Posts = React.createClass({
 	},
 	addPost: function(name, content) {
 		var posts = this.state.posts;
-		posts.push({
+		posts.splice(0, 0, {
 			id: this.nextId(),
 			name: name,
 			content: content
@@ -34,8 +34,10 @@ var Posts = React.createClass({
 	render: function() {
 		return (
 			<section>
-				{this.state.posts.map(this.eachPost)};
 				<InputBox handleFormSubmit={this.addPost} />
+				<div className="row">
+					{this.state.posts.map(this.eachPost)};
+				</div>			
 			</section>
 		);
 	}

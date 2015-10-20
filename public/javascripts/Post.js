@@ -4,7 +4,7 @@ var Post = React.createClass({displayName: "Post",
 	},
 	render: function() {
 		return (
-	    	React.createElement("div", {className: "thumbnail"}, 
+	    	React.createElement("div", {className: "col-xs-12 col-md-6 thumbnail"}, 
 	      		React.createElement("div", {className: "caption"}, 
 	        		React.createElement("h2", null, this.props.name), 
 	        		React.createElement("p", null, this.props.content), 

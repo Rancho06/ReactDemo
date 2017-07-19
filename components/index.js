@@ -6,7 +6,7 @@ var IndexPage = React.createClass({
 	    		<div id="myPost" className="container-fluid">
 	    			<Posts />
 	    		</div>
-	    		<Footer>@CopyRight Shu Zhou 2015</Footer> 
+	    		<Footer>@CopyRight Shu Zhou 2015</Footer>
 	    	</section>
     	);
   	}
